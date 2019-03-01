@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FlagApp</string>
+    <string name="main_et_hint">Россия</string>
+    <string name="main_tw_country">Страна</string>
+    <string name="main_btn_text">Показать</string>
+    <string name="main_tw_flag">Флаг</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#c83c10</color>
+
+    <color name="black">#666664</color>
+    <color name="lightish_gray">#d0d0d0</color>
+    <color name="white">#ffffff</color>
+
+
+    <!-- Main Screen -->
+    <color name="main_text_color">@color/black</color>
+    <color name="main_btn_enabled_color">@color/colorAccent</color>
+    <color name="main_btn_disabled_color">@color/lightish_gray</color>
+    <color name="main_btn_text_color">@color/white</color>
+
+</resources>
+
+
+
+
