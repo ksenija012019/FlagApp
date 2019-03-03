@@ -119,6 +119,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable editable) {
             btn_show.setEnabled(!TextUtils.isEmpty(et_country.getText()));
+
+            //второй вариант кнопки
+           // btn_show.setBackgroundResource(R.drawable.bg_btn_start);
         }
     };
 }
