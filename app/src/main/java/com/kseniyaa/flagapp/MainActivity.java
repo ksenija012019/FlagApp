@@ -7,7 +7,6 @@ import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView img_flag;
     int img;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         et_country.addTextChangedListener(watcher);
+        //не обязательно
         et_country.setFilters(new InputFilter[]{new InputFilter.LengthFilter(10)});
 
         if (savedInstanceState != null) {
@@ -65,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
                     img_flag.setOnClickListener(imgListener);
 
                 } else {
-                    Toast.makeText(MainActivity.this, "Такой страны нет, попробуй ещё", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Такой страны нет, попробуй ещё", Toast.LENGTH_SHORT)
+                            .show();
                     img_flag.setOnClickListener(null);
                     img = R.drawable.flag_gray;
                 }
@@ -107,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+
     TextWatcher watcher = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -119,6 +122,10 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable editable) {
             btn_show.setEnabled(!TextUtils.isEmpty(et_country.getText()));
+
+//            if (!et_country.getText().toString().isEmpty()) {
+//                btn_show.setEnabled(true);
+//            }
 
             //второй вариант кнопки
            // btn_show.setBackgroundResource(R.drawable.bg_btn_start);

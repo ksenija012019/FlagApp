@@ -9,11 +9,16 @@
     <color name="white">#ffffff</color>
 
 
+
     <!-- Main Screen -->
     <color name="main_text_color">@color/black</color>
     <color name="main_btn_enabled_color">@color/colorAccent</color>
     <color name="main_btn_disabled_color">@color/lightish_gray</color>
     <color name="main_btn_text_color">@color/white</color>
+
+
+    <color name="main_btn_end_color">#FB8C00</color>
+    <color name="main_btn_start_color">@color/colorAccent</color>
 
 </resources>
 

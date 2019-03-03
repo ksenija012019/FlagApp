@@ -50,17 +50,31 @@
         android:src="@drawable/flag_gray"
         />
 
+    <!--<Button-->
+        <!--android:id="@+id/btn_show"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="@dimen/small"-->
+        <!--android:backgroundTint="@color/btn_color"-->
+        <!--android:enabled="false"-->
+        <!--android:text="@string/main_btn_text"-->
+        <!--android:textColor="@color/main_btn_text_color"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
     <Button
         android:id="@+id/btn_show"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/small"
-        android:backgroundTint="@color/btn_color"
+        android:layout_width="92dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/main_btn_disabled_color"
         android:enabled="false"
         android:text="@string/main_btn_text"
         android:textColor="@color/main_btn_text_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>
